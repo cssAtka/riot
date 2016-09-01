@@ -1,0 +1,43 @@
+@import './normalize.css';
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background: #ccc;
+}
+
+.content {
+	padding: 2rem;
+
+	&__input,
+	&__text {
+		margin: 1rem 0;
+		display: block;
+
+		&--show {
+			margin: 1rem 0;
+			display: block;
+		}
+		&--hide {
+			display: none;
+		}
+	}
+	button {
+		padding: .5rem 1rem;
+		background: #000;
+		color: #fff;
+	}
+}
+
+
